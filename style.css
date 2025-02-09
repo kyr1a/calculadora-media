@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "BagnardSerif";
+  src: url("./fonts/Bagnard.otf");
+}
+
+body {
+  font-family: "Vollkorn", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  background-color: rgb(237, 241, 244);
+  color:#060621;
+}
+
+#logo {
+  width: 64px;
+  color:rgb(6, 6, 33);
+}
+
+header {
+  display:flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 56px;
+  padding-bottom: 32px;
+  gap: 24px;
+}
+
+h1 {
+  font-family: "BagnardSerif";
+  font-size: 48px;
+}
+
+.container {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 64px;
+}
+
+.inputs {
+  display: flex;
+  gap: 12px;
+}
+
+form button {
+  font-family: "Vollkorn", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  background-color: rgb(41, 101, 213);
+  color:rgb(237, 241, 244);
+  font-size: 16px;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 2px;
+}
+
+form button:hover {
+  background-color: rgb(20, 74, 175);
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+form input {
+  font-family: "Vollkorn", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 18px;
+  background-color: #fff;
+  border: none;
+  padding: 6px 12px;
+  border-bottom:  2px solid rgba(6, 6, 33, 0.25);
+}
+
+.input {
+  display: flex;
+  align-items: center;
+  gap: 8px
+}
+
+table {
+  width: 100%;
+}
+
+table th {
+  border-bottom:  2px solid rgba(6, 6, 33, 0.25);
+  padding: 8px 16px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+table td {
+  text-align: center;
+  font-size: 18px;
+  padding: 6px 0;
+  border-bottom:  1px solid rgba(6, 6, 33, 0.10);
+}
+
+.resultado {
+  padding: 8px 16px;
+  font-weight: bold;
+}
+
+.aprovado {
+  background-color: rgb(6, 55, 19);
+  color: #fff;
+}
+
+.reprovado {
+  background-color: rgb(55, 6, 14);
+  color: #fff;
+}
